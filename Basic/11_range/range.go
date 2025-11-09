@@ -19,5 +19,14 @@ func main() {
 	}
 	fmt.Println(sum)
 
+	m:=map[string]int{"a":1, "b":2, "c":3}
 
+	for k, v:= range m{
+		fmt.Println(k, v)
+	}
+
+	// i = starting byte of rune
+	for i, c:= range "Golang"{
+		fmt.Println(i, string(c)) // without string() it will print the unicode point rune
+	}
 }
